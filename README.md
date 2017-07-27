@@ -1,4 +1,5 @@
 # Netgear Arlo REST API documentation
+This is completely unofficial documentation of the REST API provided by Netgear for users of their Arlo cameras.  I hobbled it together by poking at the API with a command-line HTTP client.
 ## Authentication
 POST to https://arlo.netgear.com/hmsweb/login/v2
 
@@ -272,6 +273,17 @@ GET https://arlo.netgear.com/hmsweb/users/devices
         },
         ...
     ],
+    "success": true
+}
+```
+The image and snapshot URLs return JPEG images and can be loaded by an HTTP client or browser without authentication.
+## Library metadata
+GET https://arlo.netgear.com/hmsweb/users/library/metadata
+```
+{
+    "data": {
+        "meta": {}
+    },
     "success": true
 }
 ```
