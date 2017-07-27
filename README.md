@@ -183,3 +183,95 @@ GET https://arlo.netgear.com/hmsweb/users/friends
     "success": true
 }
 ```
+## Devices
+GET https://arlo.netgear.com/hmsweb/users/devices
+```
+{
+    "data": [
+        {
+            "connectivity": {
+                "connected": true,
+                "type": "ethernet"
+            },
+            "deviceId": "XXX",
+            "deviceName": "Millenium Falcon",
+            "deviceType": "basestation",
+            "displayOrder": 3,
+            "interfaceSchemaVer": "1",
+            "interfaceVersion": "i000",
+            "lastModified": 1501195843521,
+            "mediaObjectCount": 0,
+            "modelId": "VMB4000",
+            "owner": {
+                "firstName": "Han",
+                "lastName": "Solo",
+                "ownerId": "XXX"
+            },
+            "properties": {
+                "hwVersion": "VMB4000r3",
+                "modelId": "VMB4000",
+                "olsonTimeZone": "America/Los_Angeles"
+            },
+            "state": "provisioned",
+            "uniqueId": "XXX",
+            "userId": "XXX",
+            "userRole": "OWNER",
+            "xCloudId": "XXX"
+        },
+        {
+            "deviceId": "XXX",
+            "deviceName": "Cockpit",
+            "deviceType": "siren",
+            "displayOrder": 5,
+            "interfaceSchemaVer": "1",
+            "interfaceVersion": "i000",
+            "mediaObjectCount": 0,
+            "modelId": "VMB4000-siren",
+            "owner": {
+                "firstName": "Han",
+                "lastName": "Solo",
+                "ownerId": "XXX"
+            },
+            "parentId": "XXX",
+            "state": "provisioned",
+            "uniqueId": "XXX",
+            "userId": "XXX",
+            "userRole": "OWNER",
+            "xCloudId": "XXX"
+        },
+        {
+            "deviceId": "XXX",
+            "deviceName": "Pilot",
+            "deviceType": "camera",
+            "displayOrder": 4,
+            "interfaceSchemaVer": "2",
+            "interfaceVersion": "i002",
+            "lastImageUploaded": "true",
+            "lastModified": 1501195843521,
+            "mediaObjectCount": 0,
+            "modelId": "VMC4030",
+            "owner": {
+                "firstName": "Han",
+                "lastName": "Solo",
+                "ownerId": "XXX"
+            },
+            "parentId": "XXX",
+            "presignedFullFrameSnapshotUrl": "https://...",
+            "presignedLastImageUrl": "https://...",
+            "presignedSnapshotUrl": "...",
+            "properties": {
+                "hwVersion": "H8",
+                "modelId": "VMC4030",
+                "olsonTimeZone": "America/Los_Angeles"
+            },
+            "state": "provisioned",
+            "uniqueId": "XXX",
+            "userId": "XXX",
+            "userRole": "OWNER",
+            "xCloudId": "XXX"
+        },
+        ...
+    ],
+    "success": true
+}
+```
