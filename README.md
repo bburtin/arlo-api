@@ -38,8 +38,6 @@ For subsequent requests, set the `Authorization` header to the `token` returned 
 ## Service level
 
 GET https://arlo.netgear.com/hmsweb/users/serviceLevel
-
-Response payload:
 ```
 {
     "data": [
@@ -87,6 +85,50 @@ Response payload:
                 }
             }
         }
+    ],
+    "success": true
+}
+```
+## Payment offers
+
+GET https://arlo.netgear.com/hmsweb/users/payment/offers
+```
+{
+    "data": [
+        {
+            "alertLowBattery": -1,
+            "alertStorage": 0,
+            "amount": "$0.00",
+            "amountRaw": 0.0,
+            "autoManageStorageExpiry": -1,
+            "comments": "",
+            "countryCode": "US",
+            "createdDate": 1500397465452,
+            "currency": "usd",
+            "cvrAccessExpiry": 7,
+            "groupName": "Basic",
+            "groupNumber": 0,
+            "id": "planId",
+            "lastModified": 1500397465452,
+            "libraryAccessExpiry": 7,
+            "maxStorage": -1,
+            "numAccounts": -1,
+            "numBaseStationsSupported": -1,
+            "numCamerasSupported": 5,
+            "numPushNotify": -1,
+            "numSmartHomeModes": -1,
+            "planDescription": "Basic Plan - US",
+            "planId": "12345678",
+            "planMinutes": 0,
+            "planName": "Basic",
+            "planType": "BASIC",
+            "scheduleExpiry": -1,
+            "sharingExpiry": -1,
+            "storageAutoDelete": 0,
+            "term": "12",
+            "tieredAmount": "{}"
+        },
+        ...
     ],
     "success": true
 }
