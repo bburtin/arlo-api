@@ -32,3 +32,62 @@ Response payload:
     "success": true
 }
 ```
+
+For subsequent requests, set the `Authorization` header to the `token` returned in the login response.
+
+## Service level
+
+GET https://arlo.netgear.com/hmsweb/users/serviceLevel
+
+Response payload:
+```
+{
+    "data": [
+        {
+            "billingDate": null,
+            "createdDate": 1499819320594,
+            "cvrAccessExpiry": 7,
+            "daysLeftForExpiry": null,
+            "display": "FREE",
+            "expiryDate": null,
+            "groupName": "Basic",
+            "groupNumber": 0,
+            "isBusiness": null,
+            "lastModified": 1499819320594,
+            "libraryAccessExpiry": 7,
+            "maxAccounts": -1,
+            "maxBaseStations": -1,
+            "maxCameras": 5,
+            "maxSmartHomeModes": -1,
+            "maxStorage": -1,
+            "numPushNotify": -1,
+            "planAmount": 0.0,
+            "planCapacity": null,
+            "planCurrencyAmount": "$0.00",
+            "planId": "12345678",
+            "planName": "Basic",
+            "planType": "BASIC",
+            "planUpgradeable": true,
+            "plansTotalCurrencyAmount": "$0.00/Yr",
+            "schedule": true,
+            "scheduleExpiry": -1,
+            "sharing": true,
+            "sharingExpiry": -1,
+            "term": 12,
+            "userPreferences": {
+                "alerts": {
+                    "lowBatteryAlert": true,
+                    "pushNotificationAlert": true,
+                    "pushNotificationCount": -1,
+                    "storageAlert": false
+                },
+                "storage": {
+                    "autoDelete": false,
+                    "enabled": true
+                }
+            }
+        }
+    ],
+    "success": true
+}
+```
