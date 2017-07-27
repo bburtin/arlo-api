@@ -1,7 +1,5 @@
 # Netgear Arlo REST API documentation
-
 ## Authentication
-
 POST to https://arlo.netgear.com/hmsweb/login/v2
 
 Request payload:
@@ -32,11 +30,8 @@ Response payload:
     "success": true
 }
 ```
-
 For subsequent requests, set the `Authorization` header to the `token` returned in the login response.
-
 ## Service level
-
 GET https://arlo.netgear.com/hmsweb/users/serviceLevel
 ```
 {
@@ -90,7 +85,6 @@ GET https://arlo.netgear.com/hmsweb/users/serviceLevel
 }
 ```
 ## Payment offers
-
 GET https://arlo.netgear.com/hmsweb/users/payment/offers
 ```
 {
@@ -130,6 +124,23 @@ GET https://arlo.netgear.com/hmsweb/users/payment/offers
         },
         ...
     ],
+    "success": true
+}
+```
+## Profile
+GET https://arlo.netgear.com/hmsweb/users/profile
+```
+{
+    "data": {
+        "_type": "User",
+        "acceptedPolicy": 1,
+        "country": "US",
+        "currentPolicy": 1,
+        "firstName": "Han",
+        "language": "en",
+        "lastName": "Solo",
+        "validEmail": true
+    },
     "success": true
 }
 ```
