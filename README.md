@@ -18,7 +18,7 @@ Response payload:
         "authenticated": 12345,
         "countryCode": "US",
         "dateCreated": 1499819317539,
-        "email": "test@example.com",
+        "email": "han@example.com",
         "paymentId": "12345",
         "policyUpdate": false,
         "serialNumber": "ABCDE",
@@ -141,6 +141,45 @@ GET https://arlo.netgear.com/hmsweb/users/profile
         "lastName": "Solo",
         "validEmail": true
     },
+    "success": true
+}
+```
+## Friends
+GET https://arlo.netgear.com/hmsweb/users/friends
+```
+{
+    "data": [
+        {
+            "adminUser": false,
+            "createdDate": 1500004426332,
+            "devices": [
+                {
+                    "deviceId": "ABC",
+                    "deviceName": "Back yard",
+                    "modifiedDate": 1500004426332,
+                    "uniqueId": "ABCDE-123-12345678_ABCDEF1234567"
+                },
+                {
+                    "deviceId": "4XH4767WA1D1A",
+                    "deviceName": "Side",
+                    "modifiedDate": 1500004426332,
+                    "uniqueId": "ABCDE-123-12345678_ABCDEF1234567"
+                },
+                {
+                    "deviceId": "4XH4767CA37E9",
+                    "deviceName": "Front door",
+                    "modifiedDate": 1500004426332,
+                    "uniqueId": "ABCDE-123-12345678_ABCDEF1234567"
+                }
+            ],
+            "email": "luke@example.com",
+            "firstName": "Luke",
+            "lastModified": 1500004426332,
+            "lastName": "Skywalker",
+            "status": "ACCEPTED|EXPIRED"
+        },
+        ...
+    ],
     "success": true
 }
 ```
