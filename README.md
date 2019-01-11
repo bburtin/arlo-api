@@ -278,7 +278,7 @@ GET https://arlo.netgear.com/hmsweb/users/devices
 ```
 The image and snapshot URLs return JPEG images and can be loaded by an HTTP client or browser without authentication.
 ## Library metadata
-GET https://arlo.netgear.com/hmsweb/users/library/metadata
+GET https://arlo.netgear.com/hmsweb/users/library/metadata/v2
 ```
 {
     "data": {
